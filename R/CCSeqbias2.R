@@ -21,6 +21,25 @@ CCSeqbias2 <-function(path.name=getwd(),minThresholdv=c(0,1,5),maxThreshold="MAX
   CCList(path.name)
 
 
+  if(genome == "Cer3H4L2"){
+    if(!rDNA){
+      DSBList <- lapply(DSBList, function(x){
+        x <- x[!(x$Chr == 12 & x$Pos >= 451000 & x$Pos <= 469000), ]
+        return(x)
+      })
+    }
+    }
+
+  if(genome == "pombase220208"){
+    if(!rDNA){
+      DSBList <- lapply(DSBList, function(x){
+        x <- x[!(x$Chr == 3 & x$Pos <= 24600 & x$Pos <= 2439550), ]
+        return(x)
+      })
+       }
+     }
+
+
 # CCList("/Users/wg45/Dropbox/Lab_NGS/CC-seq/CC-seq_Saved/FullMaps/Raw/George/Test")
 
 # Read in entire genome as list of character vectors. Only 97.4 mb of RAM used for the entire genome encoded this way!
