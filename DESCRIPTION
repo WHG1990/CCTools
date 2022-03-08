@@ -1,0 +1,32 @@
+Package: CCTools
+Title: A suite of tools for analysing CC-seq data. 
+Version: 0.0.0.9000
+Authors@R: 
+    person("William", "Gittens", , "W.Gittens@sussex.ac.uk", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-3830-1218"))
+    person("George", "Brown", , "G.Brown@sussex.ac.uk", role = c("aut"),
+           comment = c(ORCID = "0000-0002-5689-5363"))
+    person("Matt", "Neale", , "M.Neale@sussex.ac.uk", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6453-1877"))
+Description: A suite of tools for CC-seq data analysis.
+License: use_mit_license()
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Imports: 
+    data.table,
+    doParallel,
+    dplyr,
+    e1071,
+    ggplot2,
+    ggpubr,
+    magick,
+    plyr,
+    RColorBrewer,
+    readr,
+    scales,
+    seqinr,
+    shape,
+    stats,
+    stringi,
+    stringr
