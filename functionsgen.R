@@ -9,3 +9,12 @@ devtools::load_all()
 devtools::document()
 # devtools::load_all()
 
+getwd()
+roxygenise()
+
+install_github("WHG1990/CCTools")
+
+library(CCTools)
+
+
+CCTools::
